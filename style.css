@@ -4,6 +4,9 @@
   src: url(fonte/Irish_Grover/IrishGrover-Regular.woff);
 }
 
+/* font-family: 'Inria Sans', sans-serif;
+font-family: 'Inter', sans-serif; */
+
 /* HEADER */
 .top_container {
   display: grid;
@@ -12,9 +15,11 @@
 }
 
 .portlogo {
-  grid-column: 1/5;
+  grid-column: 1/4;
   z-index: 10;
+  padding: 2%;
 }
+
 .menu {
   grid-column: 2/6;
   /* grid-row: 2; */
@@ -49,22 +54,52 @@ a:visited {
 }
 
 /* MAIN */
-main {
+/* main {
   margin: 0 50px;
-}
+} */
 .name_side {
   transform: rotate(90deg);
+  color: #22c900;
+  z-index: 20;
+  position: fixed;
+  right: 2%;
+  top: 90%;
+  transform-origin: right;
+}
+p {
+  font-family: "Inria Sans", sans-serif;
+}
+
+.grid_container {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.grid_container h2,
+img {
+  grid-column: 1;
+}
+
+.projects_container p {
+  padding: 2%;
 }
 
 /* FOOTER */
 .some {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   place-items: center;
   gap: 8%;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 35%;
+  padding-right: 35%;
 }
 .some img {
   max-width: 40px;
+}
+.name {
+  color: #22c900;
+  grid-column: 1/3;
 }
