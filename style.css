@@ -1,5 +1,41 @@
+/* FONTFACE */
+@font-face {
+  font-family: menu;
+  src: url(fonte/Irish_Grover/IrishGrover-Regular.woff);
+}
+
+/* HEADER */
+.menuparent {
+  font-family: menu;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 45px;
+  margin-top: -10%;
+  margin-bottom: 30px;
+  background-color: #aec6e7;
+  text-transform: uppercase;
+}
+.menuparent a {
+  text-decoration: none;
+}
+.menuparent a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 0 50px;
+}
+
 /* FOOTER */
 .some {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 8%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.some img {
+  max-width: 40px;
 }
