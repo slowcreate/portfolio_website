@@ -5,15 +5,36 @@
 }
 
 /* HEADER */
+.top_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+.portlogo {
+  grid-column: 1/5;
+  z-index: 10;
+}
+.menu {
+  grid-column: 2/6;
+  /* grid-row: 2; */
+}
+
 .menuparent {
   font-family: menu;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  font-size: 2rem;
+  align-items: center;
+  height: 60px;
   list-style: none;
   gap: 45px;
-  margin-top: -10%;
+  margin-top: -14%;
+  padding-right: 5%;
   margin-bottom: 30px;
   background-color: #aec6e7;
+  color: #3f5eed;
   text-transform: uppercase;
 }
 .menuparent a {
@@ -23,8 +44,16 @@
   text-decoration: underline;
 }
 
+a:visited {
+  color: #3f5eed;
+}
+
+/* MAIN */
 main {
   margin: 0 50px;
+}
+.name_side {
+  transform: rotate(90deg);
 }
 
 /* FOOTER */
