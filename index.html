@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Inter:wght@300;400&display=swap"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <title>Forside</title>
 </head>
 
@@ -19,39 +23,58 @@
             <a href="index.html" class="portlogo"><img src="billeder/portfolio.svg" alt=""></a>
             <nav class="menu">
                 <ul class="menuparent">
-                    <li><a href="projekter.html">Projekter</a></li>
-                    <li><a href="galleri.html">Galleri</a></li>
-                    <li><a href="ommig.html">Om mig</a></li>
+                    <li><a href="projekter.html" class="linkheader">Projekter</a></li>
+                    <li><a href="galleri.html" class="linkheader">Galleri</a></li>
+                    <li><a href="ommig.html" class="linkheader">Om mig</a></li>
                 </ul>
             </nav>
+            <div class="icon_container">
+                <div class="hamburger">
+                    <span class="burgerbar"></span>
+                    <span class="burgerbar"></span>
+                    <span class="burgerbar"></span>
+                </div>
+                <a href="ommig.html"><img class="profile" src="billeder/greenuser.svg" alt="profilelogo"></a>
+            </div>
         </div>
     </header>
     <main>
         <div class="projects_container">
             <div class="grid_container">
                 <img src="billeder/event_1.webp" alt="">
-                <h2>Projekter</h2>
+                <a href="projekter.html">
+                    <h2>Projekter</h2>
+                </a>
             </div>
-            <p>På denne hjemmeside vil du finde den html, css og javascript, <br> jeg har lært i løbet af 1. semester på
+            <p>På denne hjemmeside vil du finde den html, css og javascript,<br> jeg har lært i løbet af 1. semester på
                 Multimediedesign.</p>
             <p class="name_side">Lavet af Selma Louise Østrup Kangas-Kärki</p>
         </div>
         <div class="picture_text">
-            <h3><a href=""></a></h3>
-            <img src="" alt="">
-            <h3><a href=""></a></h3>
-            <img src="" alt="">
+            <div class="text_on_pic">
+                <h3><a href="">Galleri</a></h3>
+                <img src="billeder/galleri.webp" alt="arkbooksvæg">
+            </div>
+            <div class="text_on_pic">
+                <h3><a href="">Om mig</a></h3>
+                <img src="" alt="">
+            </div>
         </div>
-        <h3></h3>
-        <form action="">
-        </form>
+        <div>
+            <h3>Kontakt mig her</h3>
+            <form action="">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="some">
-            <img src="billeder/insta.svg" alt="instalogo">
-            <img src="billeder/linkedin.svg" alt="linkedinlogo">
+            <a href="https://www.instagram.com/slow.create/"><img class="insta" src="billeder/insta.svg"
+                    alt="instalogo"></a>
+            <a href="https://www.linkedin.com/in/selma-louise-%C3%B8strup-kangas-k%C3%A4rki-49765218b/"><img
+                    class="linkedin" src="billeder/linkedin.svg" alt="linkedinlogo"></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
