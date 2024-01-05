@@ -10,13 +10,48 @@ img {
 }
 
 @media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menuparent.active {
+    right: 0;
+  }
+
   .menuparent {
-    display: none;
+    right: -150%;
+    position: absolute;
+    font-family: menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    height: 1200px;
+    width: 250px;
+    list-style: none;
+    gap: 45px;
+    color: #3f5eed;
+    background-color: #aec6e7;
+    top: 19%;
+    text-transform: uppercase;
+    transition: 0.3s;
+    z-index: 20;
+  }
+
+  .menuparent a:hover {
+    text-decoration: none;
+    color: #22c900;
   }
 
   .portlogo {
     grid-column: 1/6;
   }
+
+  .booking_form {
+    max-width: 420px;
+  }
+
   .gallerip {
     padding: 8%;
     padding-top: 0;
@@ -24,9 +59,32 @@ img {
 }
 
 @media (min-width: 800px) {
+  .menuparent {
+    font-family: menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2rem;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    gap: 45px;
+    margin-top: -12%;
+    padding-right: 5%;
+    margin-bottom: 30px;
+    background-color: #aec6e7;
+    color: #3f5eed;
+    text-transform: uppercase;
+  }
+
+  .menuparent a:hover {
+    text-decoration: underline;
+  }
+
   .icon_container {
     display: none;
   }
+
   .galleri_grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

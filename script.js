@@ -1,15 +1,15 @@
 // Burgermenu
 const hamburger = document.querySelector(".hamburger");
-const menuparent = document.querySelector(".menuparent");
+const menu = document.querySelector(".menuparent");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
-  menuparent.classList.toggle("active");
+  menu.classList.toggle("active");
 });
 
-document.querySelectorAll(".linkheader").forEach((n) =>
+document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
-    menuparent.classList.remove("active");
+    menu.classList.remove("active");
   })
 );

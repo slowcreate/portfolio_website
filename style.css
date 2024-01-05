@@ -9,6 +9,16 @@ main {
   hyphens: auto;
 }
 
+.hamburger.active .burgerbar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .burgerbar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .burgerbar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /* font-family: 'Inria Sans', sans-serif;
 font-family: 'Inter', sans-serif; */
 
@@ -30,28 +40,8 @@ font-family: 'Inter', sans-serif; */
   /* grid-row: 2; */
 }
 
-.menuparent {
-  font-family: menu;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 2rem;
-  align-items: center;
-  height: 60px;
-  list-style: none;
-  gap: 45px;
-  margin-top: -12%;
-  padding-right: 5%;
-  margin-bottom: 30px;
-  background-color: #aec6e7;
-  color: #3f5eed;
-  text-transform: uppercase;
-}
 .menuparent a {
   text-decoration: none;
-}
-.menuparent a:hover {
-  text-decoration: underline;
 }
 
 a:visited {
@@ -97,13 +87,13 @@ a:visited {
 
 .name_side {
   transform: rotate(90deg);
-  color: #22c900;
-  z-index: 20;
+  color: #2bff00;
+  z-index: 10;
   position: fixed;
   right: 2%;
   top: 90%;
   transform-origin: right;
-  filter: drop-shadow(1px 1px 5px #e4ffde);
+  /* filter: drop-shadow(1px 1px 5px #e4ffde); */
 }
 p {
   font-family: "Inria Sans", sans-serif;
@@ -162,6 +152,43 @@ h2 {
   gap: 20px;
   max-width: 400px;
   margin: auto;
+}
+
+.booking_form h3 {
+  font-family: "Inria Sans", sans-serif;
+  text-transform: uppercase;
+  color: #2d3691;
+  padding: 20px;
+}
+
+.booking_form {
+  background-color: #a7cbff;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  background-color: #c1dbff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding-left: 15px;
+  color: #2f3ec1;
+  border: none;
+  height: 50px;
+  width: 80%;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+textarea {
+  padding-top: 15px;
 }
 
 /* FOOTER */
