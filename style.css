@@ -4,6 +4,10 @@
   src: url(fonte/Irish_Grover/IrishGrover-Regular.woff);
 }
 
+/* body {
+  background-color: rgb(202, 202, 202);
+} */
+
 main {
   overflow-wrap: break-word;
   hyphens: auto;
@@ -26,7 +30,6 @@ font-family: 'Inter', sans-serif; */
 .top_container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  /* grid-template-rows: 1fr 1fr; */
 }
 
 .portlogo {
@@ -42,6 +45,10 @@ font-family: 'Inter', sans-serif; */
 
 .menuparent a {
   text-decoration: none;
+}
+.menuparent a:hover {
+  text-decoration: none;
+  color: #22c900;
 }
 
 a:visited {
@@ -114,7 +121,7 @@ h2 {
 }
 
 .grid_container {
-  margin-top: 2%;
+  margin-top: 7%;
   place-items: center;
   position: relative;
 }
@@ -124,7 +131,7 @@ h2 {
 }
 
 .grid_container h2 {
-  display: block;
+  /* display: block; */
   font-size: 1.5rem;
   position: absolute;
   top: 43%;
@@ -154,11 +161,12 @@ h2 {
   margin: auto;
 }
 
-.booking_form h3 {
+h3 {
   font-family: "Inria Sans", sans-serif;
   text-transform: uppercase;
   color: #2d3691;
   padding: 20px;
+  padding-left: 0;
 }
 
 .booking_form {
@@ -173,6 +181,13 @@ h2 {
   align-items: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
 input,
 textarea {
   background-color: #c1dbff;
@@ -182,13 +197,96 @@ textarea {
   color: #2f3ec1;
   border: none;
   height: 50px;
-  width: 80%;
   margin: 15px;
   border-radius: 10px;
 }
 
 textarea {
   padding-top: 15px;
+}
+
+button {
+  font-family: "Inria Sans", sans-serif;
+  text-transform: uppercase;
+  width: 30%;
+  height: 5%;
+  transform: translateX(110%);
+  margin: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #c2e0ad;
+  border-radius: 4px;
+  border: hsl(114, 100%, 72%) solid 2px;
+  padding: 2%;
+  background-color: #ecffeb;
+}
+button:hover {
+  background-color: #c1ffae;
+  color: hsl(100, 100%, 43%);
+}
+
+.projekt_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+iframe {
+  border: solid 20px #2d3691;
+}
+
+.text_on_pic h3 {
+  font-family: menu;
+  font-weight: 800;
+  z-index: 30;
+  text-align: center;
+  transform: translate(-10%, 370%);
+  background-color: #b3cbed;
+  width: 60%;
+}
+.text_on_pic a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.picture_text img {
+  max-width: 500px;
+  padding: 13%;
+  padding-top: 2%;
+  padding-bottom: 6%;
+}
+
+.text_on_pic h3:hover {
+  background-color: #b3cbed;
+  width: 70%;
+}
+
+/* OMMIG */
+
+.portrait_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portrait_container h2 {
+  grid-column: 2/4;
+  grid-row: 1;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.portrait_container p {
+  grid-column: 2/4;
+  grid-row: 1;
+  color: #000000;
+  padding-left: 18%;
+  font-size: 0.8rem;
+}
+.portrait_container img {
+  grid-column: 1/3;
+  grid-row: 1;
+  transform: scaleX(-1);
 }
 
 /* FOOTER */
