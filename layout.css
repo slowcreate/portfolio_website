@@ -34,7 +34,7 @@ img {
     gap: 45px;
     color: #3f5eed;
     background-color: #aec6e7;
-    top: 19%;
+    top: 14%;
     text-transform: uppercase;
     z-index: 20;
   }
@@ -146,5 +146,10 @@ img {
 
   .text_on_pic h3:hover {
     width: 83%;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-left: 14%;
   }
 }
