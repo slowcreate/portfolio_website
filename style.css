@@ -205,6 +205,7 @@ textarea {
 }
 
 button {
+  display: block;
   font-family: "Inria Sans", sans-serif;
   text-transform: uppercase;
   width: 30%;
@@ -260,14 +261,44 @@ button:hover {
 }
 
 iframe {
-  border: solid 8px #2d3691;
-  width: 400px;
+  display: none;
+  background-image: url(billeder/DSBHappens.webp);
+  width: 200px;
+  height: 200px;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.tema {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.tema h3 {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.tema2 .button_div button {
+  font-size: 0.6rem;
+  width: 80%;
+  height: 8%;
+  transform: translateX(20%);
+  margin: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #c2e0ad;
+  border-radius: 4px;
+  border: hsl(213, 100%, 72%) solid 2px;
+  padding: 5%;
+  background-color: #ecffeb;
 }
 
 .projekt_container h3 {
   font-family: menu;
   color: #2d3691;
   text-align: left;
+  padding-bottom: 2%;
+  margin-top: 2%;
 }
 
 #start_hattifnat {
@@ -305,38 +336,59 @@ h6 {
 
 .tema p,
 h6 {
-  margin-left: 6%;
-  margin-right: 6%;
+  margin: 6%;
+  margin-top: 25%;
+  grid-column: 1/3;
+  grid-row: 1;
+  padding-left: 7%;
+  font-size: 0.8rem;
 }
 
 .tema a {
-  font-family: "Inter", sans-serif;
+  font-family: "Inria Sans", sans-serif;
   font-weight: 300;
+  text-decoration: none;
+  color: #96b7f3;
+  width: 200px;
+  height: 200px;
+  border-radius: 48%;
+  padding-top: 20%;
+  padding-left: 0;
+  padding-right: 3%;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.tema a:hover {
+  color: #ffffff;
 }
 
 .tema button {
   text-transform: uppercase;
-  width: 40%;
-  height: 3%;
-  transform: translateX(0);
-  padding: 2%;
+  width: 37%;
+  height: 31px;
+  transform: translateX(20%);
+  padding: 1.2%;
   margin: 0;
-  margin-bottom: 5%;
-  margin-left: 6%;
+  margin-bottom: 3%;
+  margin-left: 4%;
   color: #adc9e0;
   border-radius: 4px;
   border: hsl(209, 78%, 67%) solid 2px;
 }
 
 .tema button:hover {
-  background-color: #aee4ff;
-  color: hsl(214, 79%, 66%);
+  background-color: #cee3ff;
+  color: #ffffff;
 }
 
+button a {
+  text-decoration: none;
+  font-weight: 300;
+}
 .button_div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 /* OMMIG */
 
@@ -381,19 +433,19 @@ h6 {
   transform: scaleX(-1);
 }
 
-.portrait_parent {
-  background-color: #e0ffe0;
-}
 .portrait_parent p {
-  margin-left: 10%;
-  margin-right: 10%;
   text-align: center;
   font-size: 0.8rem;
 }
 
 .portrait_parent h2 {
   font-family: menu;
+  padding-bottom: 1%;
   color: #22c900;
+}
+
+.portrait_parent {
+  background-color: #afd1fe;
 }
 
 h4 {
@@ -410,12 +462,18 @@ h4::first-letter {
   font-size: 1.3rem;
   margin-right: 1px;
 }
+
+.cv_child p,
+.cv_child2 p,
+.cv_child3 p {
+  margin: 8%;
+  margin-left: 8%;
+  margin-bottom: 0;
+}
+
 .cv_child p {
   grid-column: 1/3;
   text-align: left;
-  margin: 4%;
-  margin-left: 13%;
-  margin-bottom: 0;
 }
 .cv_child p:first-child {
   grid-row: 1;
@@ -443,51 +501,57 @@ h4::first-letter {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr;
-  margin: 3%;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 .cv_child2 p {
   text-align: right;
   grid-row: 2;
   grid-column: 2/4;
+  margin-left: 20%;
 }
 .cv_child2 p:first-child {
   grid-row: 1;
+  margin-left: 20%;
 }
 .cv_child2 p:last-child {
   grid-row: 2;
+  margin-left: 5%;
 }
-.cv_child2 img:first-child {
+.cv_child2 img:nth-child(2) {
   grid-column: 1;
-  grid-row: 2;
-  margin-bottom: 6%;
+  grid-row: 1;
+  margin-top: 16%;
+  margin-left: 18%;
 }
 .cv_child2 img:last-child {
   grid-column: 1;
   grid-row: 2;
-  margin-top: 10%;
+  margin-top: 16%;
+  margin-left: 18%;
 }
 
 .cv_child3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px 110px 2fr;
-  margin: 2%;
 }
 .cv_child3 p:first-child {
   grid-column: 1/4;
   grid-row: 1;
+  margin-top: 3%;
   text-align: left;
 }
 .cv_child3 p:nth-child(2) {
   grid-column: 1/4;
   grid-row: 2;
+  margin-top: 2%;
   text-align: left;
 }
 .cv_child3 img:last-child {
   grid-column: 2;
   grid-row: 3;
   margin-bottom: 14%;
+  margin-top: 8%;
   width: 360px;
 }
 
