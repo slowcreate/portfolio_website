@@ -19,6 +19,8 @@ img {
     opacity: 100%;
     height: 1200px;
     width: 250px;
+    z-index: 20;
+    gap: 45px;
   }
 
   .menuparent {
@@ -34,12 +36,10 @@ img {
     height: 0;
     width: 0;
     list-style: none;
-    gap: 45px;
     color: #3f5eed;
     background-color: #aec6e7;
     top: 14%;
     text-transform: uppercase;
-    z-index: 20;
   }
 
   .portlogo {
@@ -88,7 +88,7 @@ img {
   .galleri_grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
     max-width: 900px;
     margin: auto;
@@ -153,12 +153,8 @@ img {
 
   /* ommig */
   h4 {
-    margin-top: 0;
+    margin-top: 30px;
     margin-left: 14%;
-  }
-
-  hr {
-    display: none;
   }
 
   .portrait_parent {
@@ -229,5 +225,37 @@ img {
     max-height: 150px;
     margin-left: 22%;
     margin-top: 13%;
+  }
+
+  .tema1 li,
+  .tema2 li,
+  .tema3 li,
+  .tema4 li {
+    margin-left: 68%;
+  }
+  .tema1 a,
+  .tema2 a,
+  .tema3 a,
+  .tema4 a {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
+
+  .projekt_container iframe {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .booking_form h3 {
+    color: #3f5eed;
+    background-color: #a7cbff;
+  }
+  .tema p,
+  h3 .widepic {
+    max-width: 80%;
+    margin: none;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
